@@ -17,7 +17,7 @@ class UsersViewController: UIViewController ,UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView!.reloadData()
-        db.insert(id: "1", name: "c", gender: "c", status: "c")
+       
         
         // Do any additional setup after loading the view.
     }
@@ -57,7 +57,8 @@ class UsersViewController: UIViewController ,UITableViewDataSource, UITableViewD
         tableViewCell.emailOutlet.text = users?.data[indexPath.row].email
         tableViewCell.genderOutlet.text = users?.data[indexPath.row].gender.rawValue
         tableViewCell.statusOutlet.text = users?.data[indexPath.row].status.rawValue
-//        db.insert(id: (users?.data[indexPath.row].name)!, name: users?.data[indexPath.row].name ?? "user", gender: users?.data[indexPath.row].gender.rawValue ?? "Male", status: users?.data[indexPath.row].status.rawValue ?? "Active")
+        db.insert(id: (users?.data[indexPath.row].name)!, name: users?.data[indexPath.row].name ?? "user",email:users?.data[indexPath.row].email ?? "email"
+                  ,gender: users?.data[indexPath.row].gender.rawValue ?? "Male", status: users?.data[indexPath.row].status.rawValue ?? "Active")
 
         // missing
         // change the color of gender
