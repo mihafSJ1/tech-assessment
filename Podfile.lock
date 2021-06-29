@@ -1,0 +1,22 @@
+PODS:
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - SQLite.swift (~> 0.12.0)
+  - Starscream (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - SQLite.swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: a90b9a0b46b28e77e2af0f66fe5d69b83fd86b48
+
+COCOAPODS: 1.10.1
