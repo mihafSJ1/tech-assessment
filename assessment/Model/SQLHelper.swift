@@ -51,7 +51,7 @@ class SQLHelper
     
     func insert(name:String,email:String, gender:String,status:String){
         if read(){
-            print("inside")
+         
         
         let insertStatementString = "INSERT INTO users (Id, name, email,gender,status) VALUES (NULL, ?, ?, ?,? );"
         var insertStatement: OpaquePointer? = nil
@@ -77,7 +77,7 @@ class SQLHelper
         }
         sqlite3_finalize(insertStatement)
         }
-        print("outside")
+      
     }
  
     func read()->Bool {
